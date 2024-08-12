@@ -13,6 +13,12 @@ const StyledContent = styled.section`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+  /*----------------------------------*/
+
+  @media (max-width: 800px){
+    flex-direction: column;
+  }
 `
 
 const Container = () => {
@@ -20,6 +26,7 @@ const Container = () => {
     <StyledContainer>
       <Title>Smart Bank</Title>
       <StyledContent>
+        <Account />
         <Account />
       </StyledContent>
     </StyledContainer>
