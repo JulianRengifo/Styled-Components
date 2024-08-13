@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import ImageFilter from "../../ImageFilter";
 
 const Card = styled.div`
     box-shadow: 4px 4px 20px 0px rgb(0,0,0,0.1);
@@ -28,6 +29,8 @@ export default ({cargo}) => {
     /*Destructuramos la informacion y lo obtenemos del objeto cargo, para poder acceder a la informacion de cada uno de los cargos*/
     const{id, type, value, from, date} = cargo
     return <Card>
+        {/*atravez del type le decimos cual es el icono*/}
+        {ImageFilter(type)}
         <Info>
             <span className="type">{type}</span>
             <span>{value}</span>
