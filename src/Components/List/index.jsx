@@ -1,23 +1,19 @@
 import React from "react";
-import { Box } from "../../UI";
+import { Box, Btn } from "../../UI";
 import {lista} from "../../info"
+import Card from "../Card";
 
 const List = () => {
     return <Box>
         {
-            // Destructuramos los datos que queremos mostrar
-            // Con map accedemos a los cargos
-            lista.cargos.map(({id, type, value, date, from}) => {
+            // Cargo es cada objeto e i es la posicion dentro del arreglo 0,1,2...
+            lista.cargos.map((cargo, i) => {
                 // Key siempre se usa al usar map y es unico
-                return <div key={id}>
-                    // Muestra el valor de las propiedades 
-                    <span>{type}</span>
-                    <span>{value}</span>
-                    <span>{date}</span>
-                    <span>{from}</span>
-                </div>
+                // Se está pasando el valor de cargo como una prop al componente
+                return <Card key={i} cargo={cargo}/>
             })
         }
+        <Btn>Ver mas</Btn>
     </Box>
 }
 
