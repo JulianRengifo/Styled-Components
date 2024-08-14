@@ -1,5 +1,5 @@
 import React from "react";
-import { Icono } from "./UIC";
+import { Icono } from "./UI";
 import alimentacion from "./assets/images/alimentacion.svg"
 import utilidades from "./assets/images/utilidades.svg"
 import salud from "./assets/images/salud.svg"

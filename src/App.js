@@ -3,7 +3,7 @@ import React from "react";
 import Container from "./Components/Container";
 import Header from "./Components/Header";
 import GlobalStyle from "./GlobalStyle";
-import { temaClaro, temaOscuro } from "./UIC/temas";
+import { temaClaro, temaOscuro } from "./UI/temas";
 import { ThemeProvider } from "styled-components";
 
 function App() {

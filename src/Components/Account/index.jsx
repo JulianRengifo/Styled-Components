@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import privado from "../../assets/images/privado.svg";
 import ojo from "../../assets/images/ojo.svg";
 import dinero from "../../assets/images/dinero.svg";
-import { Icono, Box, Btn, Saldo, Detalle } from "../../UIC";  
+import { Icono, Box, Btn, Saldo, Detalle } from "../../UI";  
 import styled from "styled-components";
 
 // IconoMargin hereda los estilos de Icono, adicionando un estilo adicional margin-top
