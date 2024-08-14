@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import logo from "../../assets/images/logo.svg";
-import { colorPrimario } from "../../UI/Variables";
+import { colorPrimario } from "../../UIC/Variables";
 
 
 const StyledHeader = styled.nav`

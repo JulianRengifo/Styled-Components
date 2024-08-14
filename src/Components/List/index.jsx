@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Btn } from "../../UI";
+import { Box, Btn } from "../../UIC";
 import {lista} from "../../info"
 import Card from "../Card";
 
