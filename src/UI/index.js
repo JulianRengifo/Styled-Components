@@ -55,3 +55,9 @@ export const BtnTema = styled.div`
     border: none;
     cursor: pointer;
 `
+
+// IconoTema hereda las clases del componente Icono
+// Esta es una función que toma theme como argumento y devuelve el valor de theme.filter dependiendo de si se está utilizando un tema claro u oscuro
+export const IconoTema = styled(Icono)`
+    filter: ${({theme}) => theme.filter}
+`
